@@ -1,0 +1,16 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+server:
+  port: 8084
+  
+security:
+  oauth2:
+    client:
+      clientId: augment1securityclient
+      clientSecret: password
+    resource:
+      tokenInfoUri: http://localhost:8081/auth/oauth/check_token
+      user-info-uri:  http://localhost:8081/auth/userinfo
+     
